@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
 # Load and preprocess the data
-raw_mail_data = pd.read_csv(r'E:\Data analysis\Projects\learning\17\mail_data.csv')
+raw_mail_data = pd.read_csv('mail_data.csv')
 mail_data = raw_mail_data.where((pd.notnull(raw_mail_data)), '')
 
 # Map categories to 0 and 1 (spam=0, not spam=1)
